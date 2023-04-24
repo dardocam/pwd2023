@@ -11,7 +11,7 @@ DROP TABLE IF EXISTS Compra;
 CREATE TABLE Persona (
     id_Persona		INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     Email		    VARCHAR(255) UNIQUE,
-    Passw		    VARCHAR(255) UNIQUE,
+    Passw		    VARCHAR(255) NOT NULL,
     Nombre		    VARCHAR(100) NOT NULL,
     Apellido		VARCHAR(100) NOT NULL,
     Direccion		VARCHAR(100) NOT NULL,
@@ -87,3 +87,8 @@ ALTER TABLE Compra
 -- CUANDO ALGUN CAMPO DE LA FILA ES ACTUALIZADO SE EJECUTA EL METODO 'ON UPDATE'
 -- Y GUARDA LA ULTIMA FECHA DE EDICIÓN DE LA TABLA 
 
+
+INSERT INTO Persona
+( Email, Passw, Nombre, Apellido, Direccion, Ciudad, Sexo, Provincia, Pais, Codigo_Postal )
+VALUES
+( 'usuario@gmail.com', 'passw123', 'Diego', 'Perez', 'C 73 N 1502', 'Necochea', 'Masculino', 'Bs As', 'Argentina', '6350');
