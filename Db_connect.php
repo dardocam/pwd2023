@@ -10,7 +10,7 @@ const DBM_CHARSET='charset-utf8';
 $conexion = mysqli_connect(DBM_HOST, DBM_USER, DBM_PASSWORD, DBM_NAME);
 
 
-function selectQuery(object $conexion, string $query,string $limit=NULL){//utiliza request GET
+function selectQuery(object $conexion, string $query,int $limit){//utiliza request GET
     $contador = 0;
     $respuesta = array();
     try {
