@@ -1,2 +1,8 @@
-# pwd2023
-En este repositorio iremos subiendo ejemplos de codigo
+# pwd2023 - EESTN3 "Nikola Tesla" NECOCHEA - 
+MATERIA: PROYECTO DE WEB DINÁMICA
+
+En este repositorio iremos subiendo ejemplos para la materia sobre:
+DISEÑO DE SOFTWARE EN PHP
+DISEÑO Y CREACION DE BASE DE DATOS MYSQL
+CONTENIDO JAVASCRIPT
+EJEMPLOS SOBRE PETICIONES SINCRÓNICAS Y ASINCRÓNICAS
