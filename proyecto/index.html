@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'Transformer';
+            font-style: normal;
+            font-weight: normal;
+            src: url('Transformer.ttf');
+        }
+
+        body {
+            font-family: 'Transformer';
+            font-size: small;
+        }
+
+        .cabecera {
+            position: absolute;
+            top: 2%;
+            left: 2%;
+            height: 10%;
+            width: 93%;
+            background-color: black;
+        }
+
+        .indice {
+            position: absolute;
+            top: 13%;
+            left: 2%;
+            width: 25%;
+            height: 75%;
+        }
+
+        .contenido {
+            position: absolute;
+            top: 13%;
+            left: 30%;
+            width: 65%;
+            height: 75%;
+        }
+
+        .piedepagina {
+            position: absolute;
+            top: 89%;
+            left: 30%;
+            height: 10%;
+            width: 65%;
+        }
+
+        .cabecera,
+        .contenido,
+        .indice,
+        .piedepagina {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cabecera">
+        <p>Bienvenido a la página web de ...</p>
+    </div>
+    <div class="indice">
+        <p> Aquí es donde va la lista de prácticas </p>
+    </div>
+    <div class="contenido">
+        <p> Aquí podrías poner un texto largo contando... </p>
+        <div class="imagen">
+            <img class="mi_foto" alt="Foto de ..." src="avatar.png">
+        </div>
+        <div class="texto">
+            <p> Aquí podrías poner un texto largo contando... </p>
+        </div>
+    </div>
+    <div class="piedepagina">
+        <address> Aquí deberías poner tu dirección y datos contacto </address>
+    </div>
+</body>
+
+</html>
