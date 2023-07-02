@@ -1,62 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Layout index.php</title>
 
     <!-- estilo propio de la pagina -->
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo.css" />
 
     <!-- iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <!-- tipos de letra de google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fasthand&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fasthand&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <!-- Javascript -->
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
     <header>
-        <div class="logo">
-            <a href="home.html">iron man</a> <span class="logo-rules">rules</span>
-        </div>
-        <ul>
-
-            <li><a href="#"> <i class="fa fa-user"></i>Login</a></li>
-            <li><a href="#"><i class="fa fa-folder-open"></i>Register</a></li>
-            <li><a href="#"><i class="fa fa-share"></i>Contact</a></li>
-            <li><a href="#"><i class="fa fa-cart-plus"></i>Cart</a></li>
-
-        </ul>
+      <div class="logo">
+        <a href="home.html">iron man</a> <span class="logo-rules">rules</span>
+      </div>
+      <ul>
+        <li>
+          <a href="#"> <i class="fa fa-user"></i>Login</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-folder-open"></i>Register</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-share"></i>Contact</a>
+        </li>
+        <li>
+          <a class="btn-cart"><i class="fa fa-cart-plus"></i>Cart</a>
+          <div class="cart-count">0</div>
+        </li>
+      </ul>
     </header>
 
     <main>
+      <section class="contenedor">
+        <div class="welcome">
+          welcome to <span class="iron-man">iron man</span>
+          <p>tienda online</p>
+        </div>
+      </section>
+      <div class="titulo">
+        <h1>categorias</h1>
+      </div>
 
-        <section class="contenedor">
-            <div class="welcome">
-                welcome to <span class="iron-man">iron man</span><p>tienda online</p> 
+      <!-- Seccion para el carro de compras -->
+      <section class="cart">
+        <div class="cart-title">Cart Items</div>
+        <div class="cart-content">
+          <!-- Item -->
+          <div class="cart-box">
+            <img class="cart-img" src="img/logo.avif" alt="" srcset="" />
+            <div class="cart-detail-box">
+              <div class="cart-item-title">Item 1</div>
+              <div class="cart-price-box">
+                <div class="cart-price">$125</div>
+                <div class="cart-amt">$125</div>
+              </div>
+              <input
+                type="number"
+                name=""
+                value="1"
+                class="cart-quantity"
+                id=""
+              />
             </div>
-        </section>
-        <section class="titulo">
-            <h1>categorias</h1>
-        </section>
-        <section class="contenedor">
-            <div class="tarjeta">
-                <img src="img/logo.avif" alt="imagen" class="tarjeta-imagen">
+            <i class="fa fa-trash cart-remove"></i>
+          </div>
+          <!-- Item -->
+          <div class="cart-box">
+            <img class="cart-img" src="img/logo.avif" alt="" srcset="" />
+            <div class="cart-detail-box">
+              <div class="cart-item-title">Item 2</div>
+              <div class="cart-price-box">
+                <div class="cart-price">$125</div>
+                <div class="cart-amt">$125</div>
+              </div>
+              <input
+                type="number"
+                name=""
+                value="1"
+                class="cart-quantity"
+                id=""
+              />
             </div>
-            <div class="tarjeta"></div>
-            <div class="tarjeta"></div>
-            <div class="tarjeta"></div>
-        </section>
+            <i class="fa fa-trash cart-remove"></i>
+          </div>
+          <!-- Totales -->
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$456</div>
+          </div>
+          <button class="btn-buy">Place Order</button>
+          <i class="fa fa-close" id="cart-close"></i>
+        </div>
+      </section>
+      <!-- End Cart -->
 
+      <!-- Seccion para tarjetas de categorias -->
+      <section class="contenedor">
+        <div class="tarjeta">
+          <img src="img/logo.avif" alt="imagen" class="tarjeta-imagen" />
+        </div>
+        <div class="tarjeta"></div>
+        <div class="tarjeta"></div>
+        <div class="tarjeta"></div>
+      </section>
     </main>
-
-</body>
-
+  </body>
 </html>
