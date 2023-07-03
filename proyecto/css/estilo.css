@@ -82,9 +82,9 @@ i {
 
 main {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
-    url("../img/logo-header.png");
+    url("../img/logo-header.png") no-repeat;
   z-index: 10;
-  animation: fadeIn 1s forwards;
+  /* animation: fadeIn 1s forwards; */
 }
 
 .contenedor {
@@ -97,7 +97,6 @@ main {
   flex-direction: row;
   margin-top: 100px;
   justify-content: space-evenly;
-
   flex-wrap: wrap;
   z-index: 10;
 }
@@ -117,9 +116,10 @@ main {
 .titulo h1 {
   color: var(--principalColorFuentes);
   font-family: "Bebas Neue", sans-serif;
-  font-size: 40px;
+  font-size: 50px;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
+  font-weight: 800;
 }
 
 .welcome {
@@ -165,10 +165,11 @@ main {
   border-top-left-radius: 95px;
   border-top-right-radius: 95px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
 }
-
 .tarjeta-imagen {
   width: 120px;
   height: 120px;
@@ -177,7 +178,38 @@ main {
   margin-top: 32px;
   opacity: 0.8;
 }
-
+.tarjeta-item-title {
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+.tarjeta-item-price {
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+.tarjeta-add-cart {
+  padding: 5px;
+  margin: 5px;
+  border: 0;
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: 0.4s ease;
+  cursor: pointer;
+  margin: 10px;
+}
+.tarjeta-add-cart:hover {
+  color: beige;
+  background-color: dodgerblue;
+  transform: scale(1.1);
+}
 .cart-count {
   width: 30px;
   height: 30px;
